@@ -10,6 +10,7 @@ For subscribe:
 3. Then the username and the dates of the following week get stored in a database.
 4. Once they are successfully stored, the user receives a reply in Slack: “You have successfully joined the Breakfast Club between {dates}. Please go to Carlos’ desk to pay the corresponding 5€!”
 5. If the user has already subscribed and he is inactive but he types command for subscribe -> The user receives via Slack a reply: "Your subscription is active again between {dates}.
+6. If the user has already subscribed and he is active but he types the command for subscribe -> The user receives via Slack a reply: “You have already subscribed between {dates}. You are welcome to join again from next week”. 
 
 For unsubscribe:
 1. The user writes a command in Slack: "/unsubscribe-breakfastclub"
@@ -17,7 +18,5 @@ For unsubscribe:
 3. If the user had already subscribed and he is inactive but he types the command for unsubscribe -> The user receives via Slack a reply: "You have already unsubscribed from Breakfast Club."
 
 Edge cases:
-
-1. If the user has already subscribed and he is active but he types the command for subscribe -> The user receives via Slack a reply: “You have already subscribed between {dates}. You are welcome to join again from next week :)” 
-2. If the user types the command after Friday 16:00-> The user get’s subscribed for 2 weeks later.
-3. In every Monday, all users enrolled in the breakfast club in that week will be removed from the database.
+1. If the user types the command after Friday 16:00-> The user get’s subscribed for 2 weeks later.
+2. In every Monday, all users enrolled in the breakfast club in that week will be removed from the database.
