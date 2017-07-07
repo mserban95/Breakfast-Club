@@ -18,5 +18,6 @@ For unsubscribe:
 3. If the user had already subscribed and he is inactive but he types the command for unsubscribe -> The user receives via Slack a reply: "You have already unsubscribed from Breakfast Club."
 
 Edge cases:
-1. If the user types the command after Friday 16:00-> The user get’s subscribed for 2 weeks later.
+1. If the user types the command after Friday 16:00 -> The user get’s subscribed for 2 weeks later.
 2. In every Monday, all users enrolled in the breakfast club in that week will be removed from the database.
+3. When someone use one of this commands, in breakfast-club-att (slack private channel) will appear a message with the username and his status (active/inactive - corresponding with the used command).
