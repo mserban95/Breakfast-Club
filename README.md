@@ -18,6 +18,6 @@ For unsubscribe:
 
 Edge cases:
 
--If the user has already subscribed and he is active but he types the command for subscribe -> The user receives via Slack a reply: “You have already subscribed between {dates}. You are welcome to join again from next week :)” 
--If the user types the command after Friday 16:00-> The user get’s subscribed for 2 weeks later.
--In every Monday, all users enrolled in the breakfast club in that week will be removed from the database.
+1. If the user has already subscribed and he is active but he types the command for subscribe -> The user receives via Slack a reply: “You have already subscribed between {dates}. You are welcome to join again from next week :)” 
+2. If the user types the command after Friday 16:00-> The user get’s subscribed for 2 weeks later.
+3. In every Monday, all users enrolled in the breakfast club in that week will be removed from the database.
