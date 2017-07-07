@@ -4,7 +4,7 @@ This script contains:
 - an if statement for checking and deleting users from database which are subscribed in the current week.
 - an if statement which find the current day between Monday and Friday at 16:00 and calculates the next Monday's number, after this,
 calculate the next Friday's number. If the user already exists and he is inactive will become active and will send a message in
-break-fast-att with username and his statuselse if the user is already active, the slack will send a replay: You have already
+break-fast-att with username and his status else if the user is already active, the slack will send a replay: You have already
 subscribed between... 
 - if the user does not exist in the database, this will be registered and the slack will send a replay: You have successfully 
 joined the Breakfast Club between...
